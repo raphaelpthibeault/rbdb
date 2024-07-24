@@ -4,9 +4,10 @@ project(rbdb)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
 include_directories(
-    src
+    src/include
 )
 
 add_executable(rbdb
-    src/main.c 
+    src/main.c
+    src/common/util.c
 )
